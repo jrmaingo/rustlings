@@ -9,6 +9,11 @@
 
 // Put your function here!
 // fn ..... {
+fn calculateprice(amt: i32) -> i32 {
+    let thresh = 40;
+    let rate = if amt > thresh { 1 } else { 2 };
+    amt * rate
+}
 
 // Don't modify this function!
 #[test]
